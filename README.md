@@ -6,7 +6,7 @@ A cinematic, highly interactive personal portfolio website showcasing my skills,
 
 - **Cinematic 3D Particle Visualizer:** Built with `@react-three/fiber` and custom GLSL shaders to dynamically convert 2D logos (React, Node.js, Python, etc.) into interactive 3D particle fields.
 - **Glassmorphism Design:** Beautiful, dynamic UI elements with deep blurs, custom light/dark mode overrides, and reactive hover lighting using Tailwind CSS.
-- **Interactive Project Deck:** A responsive, interactive "stacking card" deck powered by Framer Motion that cleanly presents featured projects with smooth parallax tilts and spread animations.
+- **3D Continuous Carousel:** A highly responsive, interactive 3D project carousel powered by GSAP that features smooth continuous linear rotation, a depth perspective, and a sleek modal overlay for detailed project views.
 - **Animated Timeline & ID Card:** A custom vertical scrolling timeline and a draggable, 3D flip-able Developer ID badge with realistic physics.
 - **Theme Support:** Fully optimized for both Dark Mode (Cosmic Theme) and Light Mode (Clean Slate Theme) with dynamic color contrast adjustments.
 
@@ -14,7 +14,7 @@ A cinematic, highly interactive personal portfolio website showcasing my skills,
 
 - **Framework:** [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Animations:** [GSAP](https://gsap.com/) & [Framer Motion](https://www.framer.com/motion/)
 - **3D Graphics:** [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) + Three.js
 
 ## 🚀 Getting Started
@@ -53,7 +53,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 - `src/App.jsx`: The main entry point housing the layout, scroll logic, and global effects.
 - `components/ThreeDParticles.jsx`: WebGL canvas for interactive 3D logo particle rendering.
-- `components/ProjectsDeck.jsx`: The complex physics-based card deck for project showcases.
+- `components/ProjectShowcase.jsx`: A premium, 3D perspective continuous carousel for showcasing projects with integrated modal views.
 - `components/DeveloperIDCard.jsx`: A 3D interactive, flippable developer ID badge.
 - `components/TechStackShowcase.jsx`: Infinite scrolling marquee for technologies.
 
