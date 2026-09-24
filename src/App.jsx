@@ -4,7 +4,7 @@ import FloatingCursor from "@/components/FloatingCursor";
 import SectionHeader from "@/components/SectionHeader";
 import TechStackShowcase from "@/components/TechStackShowcase";
 import InteractiveSkills from "@/components/InteractiveSkills";
-import ProjectsDeck from "@/components/ProjectsDeck";
+import ProjectShowcase from "@/components/ProjectShowcase";
 import TimelineItem from "@/components/TimelineItem";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
@@ -183,7 +183,7 @@ export default function App() {
 
         <section 
           id="home" 
-          className="relative min-h-screen px-6 pb-24 pt-32 lg:px-16 flex items-center justify-center"
+          className="relative min-h-screen px-6 py-12 lg:px-16 flex items-center justify-center"
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
         >
@@ -346,7 +346,7 @@ export default function App() {
       {/* Neon Divider */}
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent blur-[0.5px] max-w-6xl mx-auto opacity-80" />
 
-      <section id="about" className="relative px-6 pb-24 pt-32 lg:px-16 overflow-hidden">
+      <section id="about" className="relative px-6 py-12 lg:py-16 lg:px-16 overflow-hidden">
         {/* Luminous light blobs for refraction backdrop */}
         <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] rounded-full bg-cyan-500/15 blur-[120px] pointer-events-none z-0" />
         <div className="absolute top-1/3 right-1/4 translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-purple-500/15 blur-[110px] pointer-events-none z-0" />
@@ -388,7 +388,7 @@ export default function App() {
       {/* Neon Divider */}
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/30 to-transparent blur-[0.5px] max-w-6xl mx-auto opacity-80" />
 
-      <section id="skills" className="relative px-6 pb-0 pt-32 lg:px-16 overflow-hidden">
+      <section id="skills" className="relative px-6 py-12 lg:py-16 lg:px-16 overflow-hidden">
         {/* Bright spots for skills canvas container refraction */}
         <div className="absolute top-1/3 left-1/4 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-purple-500/12 blur-[130px] pointer-events-none z-0" />
         <div className="absolute bottom-1/4 right-1/3 w-[500px] h-[500px] rounded-full bg-cyan-500/12 blur-[130px] pointer-events-none z-0" />
@@ -408,7 +408,7 @@ export default function App() {
       {/* Neon Divider */}
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent blur-[0.5px] max-w-6xl mx-auto opacity-80" />
 
-      <section id="projects" className="relative px-6 pb-24 pt-32 lg:px-16 overflow-hidden">
+      <section id="projects" className="relative px-6 py-12 lg:py-16 lg:px-16 overflow-hidden">
         {/* Luminous light blobs for projects card refraction */}
         <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] rounded-full bg-cyan-500/12 blur-[120px] pointer-events-none z-0" />
         <div className="absolute top-1/3 right-1/4 translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-purple-500/12 blur-[110px] pointer-events-none z-0" />
@@ -421,14 +421,14 @@ export default function App() {
           className="relative z-10"
         >
           <SectionHeader title="Featured Projects" />
-          <ProjectsDeck projects={projectItems} />
+          <ProjectShowcase projects={projectItems} />
         </motion.div>
       </section>
 
       {/* Neon Divider */}
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/30 to-transparent blur-[0.5px] max-w-6xl mx-auto opacity-80" />
 
-      <section id="timeline" className="relative px-6 pb-24 pt-32 lg:px-16 overflow-hidden">
+      <section id="timeline" className="relative px-6 py-12 lg:py-16 lg:px-16 overflow-hidden">
         {/* Refraction backdrop glows for timeline cards */}
         <div className="absolute top-1/3 left-1/3 w-[450px] h-[450px] rounded-full bg-purple-500/10 blur-[130px] pointer-events-none z-0" />
         <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] rounded-full bg-cyan-500/10 blur-[120px] pointer-events-none z-0" />
@@ -536,7 +536,7 @@ export default function App() {
       {/* Neon Divider */}
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent blur-[0.5px] max-w-6xl mx-auto opacity-80" />
 
-      <section id="contact" className="relative px-6 pb-24 pt-32 lg:px-16 overflow-hidden">
+      <section id="contact" className="relative px-6 py-12 lg:py-16 lg:px-16 overflow-hidden">
         {/* Luminous light blobs for contact card refraction */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-cyan-500/15 blur-[130px] pointer-events-none z-0" />
         <div className="absolute bottom-1/4 right-1/3 w-[450px] h-[450px] rounded-full bg-purple-500/15 blur-[120px] pointer-events-none z-0" />
