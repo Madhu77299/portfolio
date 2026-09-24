@@ -1,0 +1,70 @@
+/* Premium Developer ID Card CSS utilities */
+.perspective-1000 {
+  perspective: 1200px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.id-card-front-glow {
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(6, 182, 212, 0.2), /* Cyan edge glow */
+    0 0 50px rgba(139, 92, 246, 0.15), /* Purple rim lighting */
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.id-card-back-glow {
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(139, 92, 246, 0.2), /* Purple edge glow */
+    0 0 50px rgba(6, 182, 212, 0.15), /* Cyan rim lighting */
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Woven pattern simulation for navy strap */
+.lanyard-strap-texture {
+  background-color: #0d1e36;
+  background-image: 
+    linear-gradient(90deg, rgba(255,255,255,0.07) 50%, transparent 50%),
+    linear-gradient(rgba(255,255,255,0.07) 50%, transparent 50%);
+  background-size: 4px 4px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.6), 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* QR Code pattern grid placeholder */
+.qr-code-grid {
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.8) 1.5px, transparent 1.5px),
+    radial-gradient(rgba(255, 255, 255, 0.8) 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+
+/* Developer ID Card light mode styles */
+body.light-mode .id-card-front-glow,
+body.light-mode .id-card-back-glow {
+  background: rgba(255, 255, 255, 0.75) !important;
+  border-color: rgba(15, 23, 42, 0.1) !important;
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.04),
+    0 0 30px rgba(6, 182, 212, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+body.light-mode .id-card-front-glow * ,
+body.light-mode .id-card-back-glow * {
+  color: #0f172a !important;
+}
+
+body.light-mode .id-card-front-glow span,
+body.light-mode .id-card-back-glow span {
+  color: #475569 !important;
+}

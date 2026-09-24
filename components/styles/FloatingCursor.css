@@ -1,0 +1,26 @@
+/* Custom Cursor Canvas */
+.custom-cursor-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+/* Hide default cursor on desktop fine pointer devices */
+@media (pointer: fine) {
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  [role="button"],
+  .cursor-pointer,
+  .btn-solid-pill,
+  .btn-glass-pill {
+    cursor: none !important;
+  }
+}
